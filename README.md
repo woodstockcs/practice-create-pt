@@ -11,4 +11,19 @@
 1. Spend at least 60 minutes using this new data storage to grow your program's functionality. You might need to use google or phone a friend to figure out how to do some things. 
 1. Go back to the google classroom and complete the assignment reflection.
 
-### Part 3: ... coming soon ...
+### Part 3: Implement Your Algorithm
+1. Write code inside one of your routes (that is, a function in your `application.py` file) that implements at least part of your algorithm.
+2. Have that route render at least part of the output of that algorithm on an html page.
+(The equivalent in [here](https://cdn.cs50.net/2018/fall/lectures/7/src7/froshims1/application.py?highlight) might be writing some python code between lines 16 and 17 that calculates something, like this:
+```
+def registrants():
+    countOfStudents = len(students)
+    lengthOfStudentNames = 0
+    for s in students:
+      lengthOfStudentNames += len(s)
+    return render_template("registered.html", students=students, averageNameLength = lengthOfStudentNames/countOfStudents)
+ 
+```
+(dumb example, but it gives you an idea of the mechanics)
+** ask for help if you run into trouble! **
+1. Go back to google classroom and complete the assignment reflection doc.
